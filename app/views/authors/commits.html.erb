@@ -1,0 +1,9 @@
+<%  @commits_list.each do |obj| %>
+  
+  <br>
+  <%= obj.sha%>  
+  <%= obj.author_id%> 
+  <%= obj.repository_id%> 
+  <%= obj.comment%> 
+  <%= obj.commited_at%> 
+<% end %>

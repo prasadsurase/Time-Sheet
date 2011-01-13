@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @commit.sha %>
+</p> 
+<p>
+  <b>Author id:</b>
+  <%= @commit.author_id %>
+</p>
+<p>
+  <b>Repository id:</b>
+  <%= @commit.repository_id %>
+</p> 
+<p>
+  <b>Comment:</b>
+  <%= @commit.comment %>
+</p>
+<p>
+  <b>Commited at:</b>
+  <%= @commit.commited_at %>
+</p>
+
+<%= link_to 'Edit', edit_commit_path(@commit) %> |
+<%= link_to 'Back', commits_path %>
